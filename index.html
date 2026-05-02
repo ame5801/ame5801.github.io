@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Моя фотогалерея</title> 
+    <style>         body { 
+            font-family: Arial, sans-serif;             background: #f0f0f0;             text-align: center; 
+            padding: 20px; 
+        }         h1 {             color: #333; 
+        } 
+        .gallery {             display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));             gap: 20px;             max-width: 1200px; 
+            margin: 0 auto; 
+        } 
+        .photo-card {             background: white;             border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);             overflow: hidden; 
+            transition: transform 0.3s; 
+        } 
+        .photo-card:hover { 
+            transform: scale(1.02); 
+        } 
+        .photo-card img {             width: 100%;             height: 200px; 
+            object-fit: cover; 
+        } 
+        .photo-card p {             padding: 10px;             margin: 0;             font-size: 0.9rem; 
+            color: #555; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>📸 Мои любимые кадры</h1> 
+    <div class="gallery"> 
+        <div class="photo-card"> 
+            <img src="1.jpg" alt="Фото 1"> 
+            <p>Здесь могла быть подпись</p> 
+        </div> 
+        <div class="photo-card"> 
+            <img src="2.jpg" alt="Фото 2"> 
+            <p>Или здесь</p> 
+        </div> 
+        <div class="photo-card"> 
+            <img src="3.jpg" alt="Фото 3"> 
+            <p>Твой текст</p> 
+        </div> 
+    </div> 
+</body> 
+</html>
